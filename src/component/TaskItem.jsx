@@ -11,10 +11,10 @@ const TaskItem = ({ item, index, todoDeleted, todoEdit, todoTogal }) => {
                     <button
                     onClick={() => todoEdit(index)}
                         // onClick={() => todoEdit(index)}
-                        className='bg-blue-500 text-white px-2 py-1 rounded text-sm'>✏️</button>
+                        className='bg-blue-500 text-white px-2 py-1 rounded text-sm outline-none'>✏️</button>
                     <button
                         onClick={() => todoDeleted(index)}
-                        className='bg-red-500 text-white px-2 py-1 rounded text-sm'>🗑️</button>
+                        className='bg-red-500 text-white px-2 py-1 rounded text-sm outline-none'>🗑️</button>
                 </div>
             </div>
             <span className='text-sm text-gray-600 mt-1'>🕒 {item.addTime}</span>

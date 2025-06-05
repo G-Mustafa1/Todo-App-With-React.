@@ -21,7 +21,7 @@ const TaskForm = ({ todoAdd }) => {
 
     return (
         <form onSubmit={handleSubmit} className='flex gap-2 mb-4'>
-            <input className='flex-grow p-2 rounded-lg border border-indigo-400' type="text"
+            <input className='flex-grow p-2 rounded-lg border border-indigo-400 outline-none' type="text"
                 placeholder='Enter a task...'
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
